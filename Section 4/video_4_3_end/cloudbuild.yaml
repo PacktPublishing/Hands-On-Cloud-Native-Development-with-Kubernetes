@@ -1,0 +1,13 @@
+steps:
+- name: 'frolvlad/alpine-python3'
+  args: ['sh', './install-dependencies-and-run-tests.sh']
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/my-application:$COMMIT_SHA', '.' ]
+- name: 'gcr.io/cloud-builders/kubectl'
+  args: ['set', 'image', 'deployment/my-application', 'my-application=gcr.io/$PROJECT_ID/my-application:$COMMIT_SHA']
+  env:
+  - 'CLOUDSDK_COMPUTE_REGION=us-central1'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=regional-cluster'
+images:
+- 'gcr.io/$PROJECT_ID/my-application'
+

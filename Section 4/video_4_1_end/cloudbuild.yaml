@@ -1,0 +1,8 @@
+steps:
+- name: 'frolvlad/alpine-python3'
+  args: ['sh', './install-dependencies-and-run-tests.sh']
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/my-application', '.' ]
+images:
+- 'gcr.io/$PROJECT_ID/my-application'
+
