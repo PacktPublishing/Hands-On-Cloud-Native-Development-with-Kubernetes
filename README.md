@@ -1,3 +1,8 @@
+## $5 Tech Unlocked 2021!
+[Buy and download this Video for only $5 on PacktPub.com](https://www.packtpub.com/product/hands-on-cloud-native-development-with-kubernetes-video/9781838823849)
+-----
+*The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
+
 # Hands-On-Cloud-Native-Development-with-Kubernetes
 This is the code repository for [Hands-On Cloud Native Development with Kubernetes [Video]](https://www.packtpub.com/cloud-networking/hands-on-cloud-native-development-with-kubernetes-video), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the video course from start to finish.
 ## About the Video Course
